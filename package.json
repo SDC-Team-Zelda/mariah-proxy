@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "pm2 start ./server/server.js",
-    "devStart": "nodemon ./server/server.js"
+    "devStart": "node --require newrelic ./server/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -19,7 +19,8 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "newrelic": "^6.5.0"
   },
   "version": "1.0.0",
   "main": ".eslintrc.js",
